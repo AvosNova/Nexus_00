@@ -19,6 +19,7 @@ from django.urls import path, include
 from data_handler import views
 
 urlpatterns = [
+     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
     path('data_handler/', include('data_handler.urls'))
 ]

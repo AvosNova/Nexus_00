@@ -7,6 +7,9 @@ import requests
 
 uri = "mongodb+srv://pantrypal.slbncjm.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority&appName=pantryPal"
 
+def index(request):
+    return render(request, 'data_handler/index.html')
+
 def get_recipes(request):
     url = "https://api.spoonacular.com/recipes/random"
     params = {
