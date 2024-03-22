@@ -14,10 +14,36 @@
 <body>
 
     <br><br>
-    <a href="data_handler/recipes/"><button> Click Me For Random Recipe</button> </a>
+    <a href="data_handler/recipes/"><button> Click For Random Recipe</button> </a>
     <source>
     </button>
 </body>
 
+
+<style>
+    :root {
+        --button-text-color: rgb(189, 240, 224);
+        --button-bckgrnd-color: rgb(5, 93, 58);
+    }
+
+    button {
+        font-size: large;
+        font-weight: 800;
+        color: var(--button-text-color);
+        background-color: var(--button-bckgrnd-color);
+
+    }
+
+    button:hover {
+        transform: translateY(-5px);
+        color: var(--button-bckgrnd-color);
+        background-color: var(--button-text-color);
+
+    }
+
+    header {
+        text-align: center;
+    }
+</style>
 
 </html>
