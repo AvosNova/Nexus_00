@@ -2,53 +2,141 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-</head>
-
-<header>
-    <h1>BugBashers Recipe App</h1>
-</header>
-
-<body>
-    <br><br>
-    <a href="data_handler/recipes/"> <button> Click For Random Recipe</button> </a>
-</body>
-
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Index</title>
 <style>
+    
     :root {
-        --button-text-color: rgb(189, 240, 224);
-        --button-color: rgb(5, 93, 58);
-        --page-bckgrnd-color: rgb(255, 249, 223);
+            --button-text-color: rgb(0, 0, 0);
+            --page-bckgrnd-color: rgb(255, 255, 255);
     }
 
+    .navbar {
+        position: absolute;
+        left: 30%;
+    }
+
+    .subnav {
+        float: left;
+        overflow: hidden;
+        
+    }
+
+    .subnav-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+
+    }
+
+    .subnav-content a {
+        padding: 12px 16px;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        text-decoration: none;
+        display : block;
+    }
+
+    .subnav-content a:hover {
+        background-color: #eee;
+        color: black;
+        
+    }
+
+    .subnav:hover .subnav-content {
+        display: block;
+    }
     body {
         background-color: var(--page-bckgrnd-color);
+        text-decoration: none;
         text-align: center;
     }
 
     button {
-
-        font-size: larger;
-        font-weight: 800;
-        color: var(--button-text-color);
-        background-color: var(--button-color);
-        border-radius: 15px;
+        background-color: white;
+        color: black;
+        padding: 16px;
+        font-size: 20px;
+        border: none;
+        text-decoration: none;
     }
 
     button:hover {
-        transform: translateY(-3px);
-        color: var(--button-color);
-        background-color: var(--button-text-color);
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-decoration-color: rgb(123, 157, 174);
+            cursor: pointer
     }
-
+    
     header {
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: larger;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
     }
+    
+    .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 20px;
+    }
+    .topnav {
+        text-align: center;
+    }
+    
 </style>
+</head>
+
+<header>
+    <h1>BugBashers Recipe App</h1>
+</header> 
+
+<body>
+<div class="topnav">
+    <input type="text" placeholder="Search...">
+</div>
+
+<br><br>
+    
+<div class="navbar">
+    <div class = "subnav">
+        <button class="subnavbtn">CUISINE</i></button>
+        <div class="subnav-content">
+            <a href="#">Thai</a>
+            <a href="#">Chinese</a>
+            <a href="#">Mexican</a>
+            <a href="#">Italian</a>
+            <a href="#"><b>VIEW ALL</b></a>
+        </div>
+    </div>
+    <div class = "subnav">
+        <button class="subnavbtn">INGREDIENTS</button>
+        <div class="subnav-content">
+            <a href="#">Chicken</a>
+            <a href="#">Beef</a>
+            <a href="#">Pork</a>
+            <a href="#">Seafood</a>
+            <a href="#"><b>VIEW ALL</b></a>
+        </div>
+    </div>
+    <div class = "subnav">
+        <button class="subnavbtn">DIET</button>
+        <div class="subnav-content">
+            <a href="#">Vegan</a>
+            <a href="#">Vegetarian</a>
+            <a href="#">Pescetarian</a>
+            <a href="#">Gluten Free</a>
+            <a href="#"><b>VIEW ALL</b></a>
+        </div>
+    </div>
+
+</div>
+<br><br><br>
+</body>
+
+<hr class= "rounded">
 
 </html>
