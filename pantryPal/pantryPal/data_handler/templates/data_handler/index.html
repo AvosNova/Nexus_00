@@ -9,8 +9,8 @@
 <style>
     
     :root {
-            --button-text-color: black;
-            --page-bckgrnd-color: white;
+        --button-text-color: black;
+        --page-bckgrnd-color: white;
     }
 
     #navbar {
@@ -18,10 +18,20 @@
         justify-content: center;
     }
 
+    #search_box input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 20px;
+    }
+    
+    #search_box {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
     .subnav {
         float: left;
         overflow: hidden;
-        
     }
 
     .subnav-content {
@@ -31,7 +41,6 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
-
     }
 
     .subnav-content a {
@@ -44,13 +53,19 @@
 
     .subnav-content a:hover {
         background-color: var(--page-bckgrnd-color);
-        color: var(--button-text-color);
-        
+        color: var(--button-text-color);  
     }
 
     .subnav:hover .subnav-content {
         display: block;
     }
+
+    header {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: larger;
+    }
+
     body {
         background-color: var(--page-bckgrnd-color);
         text-decoration: none;
@@ -67,26 +82,10 @@
     }
 
     button:hover {
-            text-decoration: underline;
-            text-decoration-thickness: 3px;
-            text-decoration-color: rgb(123, 157, 174);
-            cursor: pointer
-    }
-    
-    header {
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: larger;
-    }
-    
-    .topnav input[type=text] {
-            padding: 6px;
-            margin-top: 8px;
-            font-size: 20px;
-    }
-    .topnav {
-        text-align: center;
-        padding-bottom: 30px;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-decoration-color: rgb(123, 157, 174);
+        cursor: pointer
     }
     
 </style>
@@ -97,7 +96,7 @@
 </header> 
 
 <body>
-<div class="topnav">
+<div id="search_box">
     <input type="text" placeholder="Search...">
 </div>
     
