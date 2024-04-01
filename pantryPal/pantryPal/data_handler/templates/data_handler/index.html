@@ -4,91 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Index</title>
-
-<style>
-    
-    :root {
-        --button-text-color: black;
-        --page-bckgrnd-color: white;
-    }
-
-    #navbar {
-        display: flex;
-        justify-content: center;
-    }
-
-    #search-box input[type=text] {
-        padding: 6px;
-        margin-top: 8px;
-        font-size: 20px;
-    }
-    
-    #search-box {
-        text-align: center;
-        padding-bottom: 30px;
-    }
-
-    .nav-items {
-        float: left;
-        overflow: hidden;
-    }
-
-    .nav-items-content {
-        display: none;
-        position: absolute;
-        background-color: var(--page-bckgrnd-color);
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-
-    .nav-items-content a {
-        padding: 12px 16px;
-        color: var(--button-text-color);
-        text-align: left;
-        text-decoration: none;
-        display : block;
-    }
-
-    .nav-items-content a:hover {
-        background-color: var(--page-bckgrnd-color);
-        color: var(--button-text-color);  
-    }
-
-    .nav-items:hover .nav-items-content {
-        display: block;
-    }
-
-    header {
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: larger;
-    }
-
-    body {
-        background-color: var(--page-bckgrnd-color);
-        text-decoration: none;
-        text-align: center;
-    }
-
-    button {
-        background-color: var(--page-bckgrnd-color);
-        color: var(--button-text-color);
-        padding: 16px;
-        font-size: 20px;
-        border: none;
-        text-decoration: none;
-    }
-
-    button:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 3px;
-        text-decoration-color: rgb(123, 157, 174);
-        cursor: pointer
-    }
-    
-</style>
+<title>Recipe App</title>
 </head>
 
 <header>
@@ -140,6 +56,87 @@
     </div>
 
 <hr class="rounded">
-
 </body>
+
+<style>
+    :root {
+        --button-text-color: black;
+        --page-bckgrnd-color: white;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    #search-box input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 20px;
+    }
+
+    #search-box {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .nav-items {
+        float: left;
+        overflow: hidden;
+    }
+
+    .nav-items-content {
+        display: none;
+        position: absolute;
+        background-color: var(--page-bckgrnd-color);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .nav-items-content a {
+        padding: 12px 16px;
+        color: var(--button-text-color);
+        text-align: left;
+        text-decoration: none;
+        display: block;
+    }
+
+    .nav-items-content a:hover {
+        background-color: var(--page-bckgrnd-color);
+        color: var(--button-text-color);
+    }
+
+    .nav-items:hover .nav-items-content {
+        display: block;
+    }
+
+    header {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: larger;
+    }
+
+    body {
+        background-color: var(--page-bckgrnd-color);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    button {
+        background-color: var(--page-bckgrnd-color);
+        color: var(--button-text-color);
+        padding: 16px;
+        font-size: 20px;
+        border: none;
+        text-decoration: none;
+    }
+
+    button:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-decoration-color: rgb(123, 157, 174);
+        cursor: pointer
+    }
+</style>
 </html>
