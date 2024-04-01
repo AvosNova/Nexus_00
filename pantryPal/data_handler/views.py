@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 
 import pymongo
 from .config import API_key
@@ -26,3 +27,13 @@ def get_recipes(request):
 
     template_data = {'recipes': recipes}
     return render(request, 'data_handler/recipes.html', template_data)
+
+@csrf_exempt #need this otherwise Django gives csrf error
+def process_search_view(request):
+    if request.method == 'POST':
+        input_text = request.POST.get('input_text')
+        #Placeholder response
+        return HttpResponse(f"You entered: {input_text}")
+    else:
+        # Display the form
+        return render(request, 'input_form.html')
