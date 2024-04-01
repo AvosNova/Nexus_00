@@ -15,7 +15,7 @@
     <div id="search-box">
         <form method="post" action="{% url 'process_search' %}">
             <input type="text" placeholder="Search..." id="input_text" name="input_text">
-            <input type="submit" value="Search" style="font-size: 22px;"> <!--Submit button-->
+            <input type="submit" value="Search" id="submit-search-btn"> <!--Submit button-->
         </form>
     </div>
     
@@ -78,6 +78,17 @@
     #search-box {
         text-align: center;
         padding-bottom: 30px;
+    }
+
+    #submit-search-btn {
+        font-size: 22px; 
+        border-radius: 10px;
+
+    }
+
+    #submit-search-btn:hover{
+        background-color: rgb(209, 209, 209);
+        transform: translateY(-1px);
     }
 
     .nav-items {
