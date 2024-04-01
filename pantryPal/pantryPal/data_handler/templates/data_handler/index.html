@@ -18,23 +18,23 @@
         justify-content: center;
     }
 
-    #search_box input[type=text] {
+    #search-box input[type=text] {
         padding: 6px;
         margin-top: 8px;
         font-size: 20px;
     }
     
-    #search_box {
+    #search-box {
         text-align: center;
         padding-bottom: 30px;
     }
 
-    .subnav {
+    .nav-items {
         float: left;
         overflow: hidden;
     }
 
-    .subnav-content {
+    .nav-items-content {
         display: none;
         position: absolute;
         background-color: var(--page-bckgrnd-color);
@@ -43,7 +43,7 @@
         z-index: 1;
     }
 
-    .subnav-content a {
+    .nav-items-content a {
         padding: 12px 16px;
         color: var(--button-text-color);
         text-align: left;
@@ -51,12 +51,12 @@
         display : block;
     }
 
-    .subnav-content a:hover {
+    .nav-items-content a:hover {
         background-color: var(--page-bckgrnd-color);
         color: var(--button-text-color);  
     }
 
-    .subnav:hover .subnav-content {
+    .nav-items:hover .nav-items-content {
         display: block;
     }
 
@@ -96,14 +96,14 @@
 </header> 
 
 <body>
-<div id="search_box">
+<div id="search-box">
     <input type="text" placeholder="Search...">
 </div>
     
 <div id="navbar">
-    <div class = "subnav">
-        <button class="subnavbtn">CUISINE</i></button>
-        <div class="subnav-content">
+    <div class = "nav-items">
+        <button class="nav-items-btn">CUISINE</i></button>
+        <div class="nav-items-content">
             <a href="#">Thai</a>
             <a href="#">Chinese</a>
             <a href="#">Mexican</a>
@@ -111,9 +111,9 @@
             <a href="#"><b>VIEW ALL</b></a>
         </div>
     </div>
-    <div class = "subnav">
-        <button class="subnavbtn">INGREDIENTS</button>
-        <div class="subnav-content">
+    <div class = "nav-items">
+        <button class="nav-itemsbtn">INGREDIENTS</button>
+        <div class="nav-items-content">
             <a href="#">Chicken</a>
             <a href="#">Beef</a>
             <a href="#">Pork</a>
@@ -121,9 +121,9 @@
             <a href="#"><b>VIEW ALL</b></a>
         </div>
     </div>
-    <div class = "subnav">
-        <button class="subnavbtn">DIET</button>
-        <div class="subnav-content">
+    <div class = "nav-items">
+        <button class="nav-itemsbtn">DIET</button>
+        <div class="nav-items-content">
             <a href="#">Vegan</a>
             <a href="#">Vegetarian</a>
             <a href="#">Pescetarian</a>
