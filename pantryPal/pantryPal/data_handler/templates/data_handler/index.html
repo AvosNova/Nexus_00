@@ -96,47 +96,48 @@
 </header> 
 
 <body>
-<div id="search-box">
-    <input type="text" placeholder="Search...">
-    <input type="submit" value="Search" style="font-size: 22px;"> <!--Submit button-->
-</div>
+    <div id="search-box">
+        <form method="post" action="{% url 'process_search' %}">
+            <input type="text" placeholder="Search..." id="input_text" name="input_text">
+            <input type="submit" value="Search" style="font-size: 22px;"> <!--Submit button-->
+        </form>
+    </div>
     
-<div id="navbar">
-    <div class = "nav-items">
-        <button class="nav-items-btn">CUISINE</i></button>
-        <div class="nav-items-content">
-            <a href="#">Thai</a>
-            <a href="#">Chinese</a>
-            <a href="#">Mexican</a>
-            <a href="#">Italian</a>
-            <a href="#"><b>VIEW ALL</b></a>
+    <div id="navbar">
+        <div class = "nav-items">
+            <button class="nav-items-btn">CUISINE</i></button>
+            <div class="nav-items-content">
+                <a href="#">Thai</a>
+                <a href="#">Chinese</a>
+                <a href="#">Mexican</a>
+                <a href="#">Italian</a>
+                <a href="#"><b>VIEW ALL</b></a>
+            </div>
+        </div>
+        <div class = "nav-items">
+            <button class="nav-items-btn">INGREDIENTS</button>
+            <div class="nav-items-content">
+                <a href="#">Chicken</a>
+                <a href="#">Beef</a>
+                <a href="#">Pork</a>
+                <a href="#">Seafood</a>
+                <a href="#"><b>VIEW ALL</b></a>
+            </div>
+        </div>
+        <div class = "nav-items">
+            <button class="nav-items-btn">DIET</button>
+            <div class="nav-items-content">
+                <a href="#">Vegan</a>
+                <a href="#">Vegetarian</a>
+                <a href="#">Pescetarian</a>
+                <a href="#">Gluten Free</a>
+                <a href="#"><b>VIEW ALL</b></a>
+            </div>
+        </div>
+        <div class="nav-items">
+            <a href="data_handler/recipes/"><button class="nav-items-btn">RANDOM RECIPE</button></a>
         </div>
     </div>
-    <div class = "nav-items">
-        <button class="nav-items-btn">INGREDIENTS</button>
-        <div class="nav-items-content">
-            <a href="#">Chicken</a>
-            <a href="#">Beef</a>
-            <a href="#">Pork</a>
-            <a href="#">Seafood</a>
-            <a href="#"><b>VIEW ALL</b></a>
-        </div>
-    </div>
-    <div class = "nav-items">
-        <button class="nav-items-btn">DIET</button>
-        <div class="nav-items-content">
-            <a href="#">Vegan</a>
-            <a href="#">Vegetarian</a>
-            <a href="#">Pescetarian</a>
-            <a href="#">Gluten Free</a>
-            <a href="#"><b>VIEW ALL</b></a>
-        </div>
-    </div>
-    <div class="nav-items">
-        <a href="data_handler/recipes/"><button class="nav-items-btn">RANDOM RECIPE</button></a>
-    </div>
-
-</div>
 
 <hr class="rounded">
 
