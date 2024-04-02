@@ -29,11 +29,11 @@ def get_recipes(request):
     return render(request, 'data_handler/recipes.html', template_data)
 
 @csrf_exempt #need this otherwise Django gives csrf error
-def process_search_view(request):
+def process_search(request):
     if request.method == 'POST':
         input_text = request.POST.get('input_text')
         #Placeholder response
         return HttpResponse(f"You entered: {input_text}")
     else:
         # Display the form
-        return render(request, 'input_form.html')
+        return render(request, 'data_handler/search.html')
